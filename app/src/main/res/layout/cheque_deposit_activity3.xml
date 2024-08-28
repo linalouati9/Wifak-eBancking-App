@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:text="Mobile deposit"
+        android:textSize="32dp"/>
+
+    <TextView
+        android:id="@+id/checkIdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Check ID *"
+        android:textSize="18sp"
+        android:alpha="0.7"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/checkId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkIdText"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:hint="Enter check ID"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/amountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkId"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Amount (TND) *"
+        android:textSize="18sp"
+        android:alpha="0.7"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountText"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:hint="Enter check amount"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/lettresAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Amount (Letters) *"
+        android:textSize="18sp"
+        android:alpha="0.7"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/lettresAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lettresAmountText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter  check amount"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/toaccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lettresAmount"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:text="To account"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/toaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toaccountText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter beneficiary name"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/sourceRIBText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toaccount"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:text="Source RIB *"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sourceRIB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sourceRIBText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter source RIB"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/sourceHolderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sourceRIB"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:text="Source holder *"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/sourceHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sourceHolderText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter source holder"
+        android:inputType="text"  />
+
+    <TextView
+        android:id="@+id/provenceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sourceHolder"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:text="Provence"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/provence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/provenceText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter your provence"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/provence"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:text="Date"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter date (yyyy-MM-dd)"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/nCompteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:text="Your Account number *"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nCompte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nCompteText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:enabled="false"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/memoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nCompte"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Memo"
+        android:textSize="18sp"
+        android:alpha="0.7"
+        android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/memoText"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter a note"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/captureCheckText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/memo"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0.7"
+            android:text="Capture check *"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/checkFront"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/captureCheckText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            app:srcCompat="@drawable/check_capture" />
+
+        <ImageView
+            android:id="@+id/checkBack"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/captureCheckText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="85dp"
+            android:layout_toStartOf="@+id/checkFront"
+            app:srcCompat="@drawable/check_capture" />
+
+
+        <TextView
+            android:id="@+id/checkFrontText"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBack"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="81dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="143dp"
+            android:layout_toStartOf="@+id/checkBackText"
+            android:text="Front" />
+
+        <TextView
+            android:id="@+id/checkBackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkFront"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="90dp"
+            android:text="Back" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBackText"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text="CONFIRM" />
+
+</RelativeLayout>
+</ScrollView>

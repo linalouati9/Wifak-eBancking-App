@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mycards"
+        android:enabled="true"
+        android:icon="@drawable/ic_cards"
+        android:title="My cards"/>
+
+    <item
+        android:id="@+id/transferOperation"
+        android:enabled="true"
+        android:icon="@drawable/ic_transfer_transaction"
+        android:title="Transfer transaction"/>
+
+    <item
+        android:id="@+id/chequeDeposit"
+        android:enabled="true"
+        android:icon="@drawable/ic_cheque_deposit"
+        android:title="Mobile deposit"/>
+
+    <item
+        android:id="@+id/cdh"
+        android:enabled="true"
+        android:icon="@drawable/ic_cdh"
+        android:title="Mobile deposit transactions"/>
+</menu>
